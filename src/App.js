@@ -6,10 +6,12 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { NavBar, Sidebar, ThemeSettings } from './components'
 import { Bnb, Btc, Eth, Calendar, Notes, Overview, Portfolio, TodoList, Trending, Watchlist } from './pages'
 
+import { useStateContext } from './contexts/ContextProvider'
+
 import './App.css'
 
 const App = () => {
-    const activeMenu = true;
+    const { activeMenu } = useStateContext();
 
   return (
     <div>
