@@ -57,10 +57,10 @@ const NavBar = () => {
           <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg' onClick={() => handleClick('userProfile')}>
             <img src={avatar} className='rounded-full w-8 h-8' />
             <p>
-              <span className='text-gray-400 text-14'>Hi, </span> {' '}
-              <span className='text-gray-400 font-bold ml-1 text-14'>John</span>
+              <span className='text-slate-900 text-14'>Hi, </span> {' '}
+              <span className='text-slate-900 font-bold ml-1 text-14'>John</span>
             </p>
-            <RiArrowDownSLine className='text-gray-400 text-14' />
+            <RiArrowDownSLine className='text-slate-900 text-14' />
           </div>
         </TooltipComponent>
         {/* Display component notification and user profile if icons are clicked */}
