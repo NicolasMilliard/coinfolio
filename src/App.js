@@ -40,26 +40,26 @@ const App = () => {
                     <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
                         <NavBar />
                     </div>
-                </div>
-                {/* Routes */}
-                <div>
-                    <Routes>
-                        {/* Dashboard */}
-                        <Route path='/' element={<Overview />} />
-                        <Route path='/overview' element={<Overview />} />
-                        {/* Pages */}
-                        <Route path='/portfolio' element={<Portfolio />} />
-                        <Route path='/watchlist' element={<Watchlist />} />
-                        <Route path='/trending' element={<Trending />} />
-                        {/* Live Charts */}
-                        <Route path='/btc-usd' element={<Btc />} />
-                        <Route path='/eth-usd' element={<Eth />} />
-                        <Route path='/bnb-usd' element={<Bnb />} />
-                        {/* Tools */}
-                        <Route path='/calendar' element={<Calendar />} />
-                        <Route path='/todo-list' element={<TodoList />} />
-                        <Route path='/notes' element={<Notes />} />
-                    </Routes>
+                    {/* Routes */}
+                    <div>
+                        <Routes>
+                            {/* Dashboard */}
+                            <Route path='/' element={<Overview />} />
+                            <Route path='/overview' element={<Overview />} />
+                            {/* Pages */}
+                            <Route path='/portfolio' element={<Portfolio />} />
+                            <Route path='/watchlist' element={<Watchlist />} />
+                            <Route path='/trending' element={<Trending />} />
+                            {/* Live Charts */}
+                            <Route path='/btc-usd' element={<Btc />} />
+                            <Route path='/eth-usd' element={<Eth />} />
+                            <Route path='/bnb-usd' element={<Bnb />} />
+                            {/* Tools */}
+                            <Route path='/calendar' element={<Calendar />} />
+                            <Route path='/todo-list' element={<TodoList />} />
+                            <Route path='/notes' element={<Notes />} />
+                        </Routes>
+                    </div>
                 </div>
             </div>
         </BrowserRouter>
