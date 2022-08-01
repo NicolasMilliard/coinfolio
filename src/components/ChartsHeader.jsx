@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChartsHeader = ({ category, title }) => {
+const ChartsHeader = ({ category }) => {
   return (
     <div className="mb-10">
       <div>
