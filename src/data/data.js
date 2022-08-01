@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiBitcoin, SiEthereum, SiBinance } from 'react-icons/si'
+import { SiBitcoin, SiEthereum } from 'react-icons/si'
 import { BiPieChart, BiCoin, BiListUl, BiTrendingUp, BiCalendar } from 'react-icons/bi'
 import { RiTodoLine } from 'react-icons/ri'
 import { BsTextLeft } from 'react-icons/bs'
@@ -9,9 +9,9 @@ export const links = [
         title: 'Dashboard',
         links: [
             {
-                name: 'overview',
+                name: 'portfolio',
                 icon: <BiPieChart />,
-                link: 'overview'
+                link: 'portfolio'
             },
         ],
     },
@@ -19,9 +19,9 @@ export const links = [
         title: 'Pages',
         links: [
             {
-                name: 'portfolio',
+                name: 'crypto',
                 icon: <BiCoin />,
-                link: 'portfolio'
+                link: 'crypto'
             },
             {
                 name: 'watchlist',
@@ -47,12 +47,7 @@ export const links = [
                 name: 'ETH-USD',
                 icon: <SiEthereum />,
                 link: 'eth-usd'
-            },
-            {
-                name: 'BNB-USD',
-                icon: <SiBinance />,
-                link: 'bnb-usd'
-            },
+            }
         ],
     },
     {
@@ -125,6 +120,121 @@ export const pieChartData = [
     { x: 'ETH', y: 30.02, text: '1.6146 ETH' },
     { x: 'BNB', y: 23.81, text: '7.8695 BNB' }
 ];
+
+export const cryptoData = [
+    {
+        Rank: 1, Coin: 'Bitcoin BTC', CurrentPrice: '$23,093.00', Hour: '-0.3%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '2.2%', WeekBg: '#15c46d',
+        DayVolume: '$41,829,211,589', MCap: '$441,293,035,772', ProductImage: 'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579',
+    },
+    {
+        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1,659.67', Hour: '-0.2%', HourBg: '#dd1547', Day: '-1.6%', DayBg: '#dd1547', Week: '3.5%', WeekBg: '#15c46d',
+        DayVolume: '$14,254,201,962', MCap: '$198,110,897,073', ProductImage: 'https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880',
+    },
+    {
+        Rank: 3, Coin: 'Tether USDT', CurrentPrice: '$0.988088', Hour: '-0.4%', HourBg: '#dd1547', Day: '0.1%', DayBg: '#15c46d', Week: '-0.3%', WeekBg: '#dd1547',
+        DayVolume: '$52,922,847,490', MCap: '$65,836,756,623', ProductImage: 'https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707',
+    },
+    {
+        Rank: 4, Coin: 'USD Coin USDC', CurrentPrice: '$0.987939', Hour: '-0.5%', HourBg: '#dd1547', Day: '-0.3%', DayBg: '#dd1547', Week: '-0.3%', WeekBg: '#dd1547',
+        DayVolume: '$6,904,107,764', MCap: '$54,280,683,993', ProductImage: 'https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389',
+    },
+    {
+        Rank: 5, Coin: 'BNB', CurrentPrice: '$284.03', Hour: '-0.2%', HourBg: '#dd1547', Day: '-1.8%', DayBg: '#dd1547', Week: '8.5%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850',
+    },
+  ];
+
+  export const coinCryptoImage = (props) => (
+    <div className='flex items-center'>
+        <img src={props.ProductImage} alt="order-item" /> 
+        <span className='ml-2'>{props.Coin}</span>
+    </div>
+  );
+
+  export const hourCryptoStatus = (props) => (
+    <button
+      type="button"
+      style={{ color: props.HourBg }}
+      className="font-semibold py-1 px-2"
+    >
+      {props.Hour}
+    </button>
+  );
+
+  export const dayCryptoStatus = (props) => (
+    <button
+      type="button"
+      style={{ color: props.DayBg }}
+      className="font-semibold py-1 px-2"
+    >
+      {props.Day}
+    </button>
+  );
+
+  export const weekCryptoStatus = (props) => (
+    <button
+      type="button"
+      style={{ color: props.WeekBg }}
+      className="font-semibold py-1 px-2"
+    >
+      {props.Week}
+    </button>
+  );
+
+  export const cryptoGrid = [
+    {
+        field: 'Rank',
+        headerText: '#',
+        width: '50',
+        textAlign: 'Center',
+    },
+    {
+        field: 'Coin',
+        template: coinCryptoImage,
+        headerText: 'Coin',
+        width: '180',
+        textAlign: 'Left',
+    },
+    {
+        field: 'CurrentPrice',
+        headerText: 'Price',
+        width: '150',
+        textAlign: 'Right',
+    },
+    {
+        field: 'Hour',
+        template: hourCryptoStatus,
+        headerText: '1h',
+        width: '100',
+        textAlign: 'Right',
+    },
+    {
+        field: 'Day',
+        template: dayCryptoStatus,
+        headerText: '24h',
+        width: '100',
+        textAlign: 'Right',
+    },
+    {
+        field: 'Week',
+        template: weekCryptoStatus,
+        headerText: '7j',
+        width: '100',
+        textAlign: 'Right',
+    },
+    {
+        field: 'DayVolume',
+        headerText: '24h Volume',
+        width: '150',
+        textAlign: 'Right',
+    },
+    {
+        field: 'MCap',
+        headerText: 'Mkt Cap',
+        width: '150',
+        textAlign: 'Right',
+    }
+  ];
 
 export const bitcoinChartData = [
     { x: new Date('2020-03-16'), open: 5354.29, high: 6931.57, low: 4460.89, close: 5832.38 },
@@ -253,19 +363,126 @@ export const bitcoinChartData = [
     { x: new Date('2022-07-25'), open: 23647.10, high: 24177.99, low: 23253.88, close: 23314.06 }
   ];
 
-  export const FinancialPrimaryXAxis = {
+export const FinancialPrimaryXAxis = {
     valueType: 'DateTime',
     minimum: new Date('2020, 3, 15'),
     maximum: new Date('2022, 7, 25'),
     crosshairTooltip: { enable: true },
     majorGridLines: { width: 0 },
-  };
+};
   
-  export const FinancialPrimaryYAxis = {
+export const BitcoinPrimaryYAxis = {
     title: 'Price',
     minimum: 4000,
     maximum: 70000,
     interval: 5000,
     lineStyle: { width: 0 },
     majorTickLines: { width: 0 },
-  };
+};
+
+export const ethereumChartData = [
+    { x: new Date('2020-03-16'), open: 123.82, high: 152.55, low: 101.10, close: 122.32 },
+    { x: new Date('2020-03-23'), open: 122.31, high: 143.36, low: 119.50, close: 124.50 },
+    { x: new Date('2020-03-30'), open: 124.47, high: 149.76, low: 124.06, close: 142.68 },
+    { x: new Date('2020-04-06'), open: 142.69, high: 176.22, low: 142.60, close: 158.59 },
+    { x: new Date('2020-04-13'), open: 158.56, high: 189.54, low: 148.33, close: 180.03 },
+    { x: new Date('2020-04-20'), open: 180.02, high: 200.00, low: 166.70, close: 197.38 },
+    { x: new Date('2020-04-27'), open: 197.39, high: 227.30, low: 189.29, close: 209.86 },
+    { x: new Date('2020-05-04'), open: 209.86, high: 216.61, low: 179.59, close: 187.54 },
+    { x: new Date('2020-05-11'), open: 187.62, high: 209.85, low: 176.00, close: 207.00 },
+    { x: new Date('2020-05-18'), open: 207.02, high: 217.07, low: 191.71, close: 199.90 },
+    { x: new Date('2020-05-25'), open: 199.90, high: 247.00, low: 196.90, close: 231.57 },
+    { x: new Date('2020-06-01'), open: 231.56, high: 253.80, low: 225.00, close: 244.56 },
+    { x: new Date('2020-06-08'), open: 244.57, high: 250.28, low: 226.20, close: 231.77 },
+    { x: new Date('2020-06-15'), open: 231.74, high: 237.30, low: 218.27, close: 228.04 },
+    { x: new Date('2020-06-22'), open: 228.03, high: 249.24, low: 216.00, close: 224.93 },
+    { x: new Date('2020-06-29'), open: 224.89, high: 232.71, low: 221.26, close: 227.56 },
+    { x: new Date('2020-07-06'), open: 227.54, high: 248.88, low: 226.93, close: 242.79 },
+    { x: new Date('2020-07-13'), open: 242.76, high: 245.33, low: 230.02, close: 239.11 },
+    { x: new Date('2020-07-20'), open: 239.12, high: 318.75, low: 234.05, close: 311.00 },
+    { x: new Date('2020-07-27'), open: 311.02, high: 415.85, low: 305.86, close: 372.42 },
+    { x: new Date('2020-08-03'), open: 372.45, high: 407.00, low: 362.85, close: 390.14 },
+    { x: new Date('2020-08-10'), open: 390.14, high: 444.71, low: 365.85, close: 433.62 },
+    { x: new Date('2020-08-17'), open: 433.61, high: 446.00, low: 379.92, close: 390.71 },
+    { x: new Date('2020-08-24'), open: 390.72, high: 429.89, low: 370.00, close: 428.94 },
+    { x: new Date('2020-08-31'), open: 428.94, high: 488.84, low: 308.42, close: 352.80 },
+    { x: new Date('2020-09-07'), open: 352.85, high: 390.43, low: 323.00, close: 366.42 },
+    { x: new Date('2020-09-14'), open: 366.43, high: 394.14, low: 355.00, close: 371.04 },
+    { x: new Date('2020-09-21'), open: 371.04, high: 376.80, low: 313.29, close: 357.49 },
+    { x: new Date('2020-09-28'), open: 357.58, high: 370.45, low: 334.24, close: 352.37 },
+    { x: new Date('2020-10-05'), open: 352.34, high: 378.40, low: 332.18, close: 374.16 },
+    { x: new Date('2020-10-12'), open: 374.17, high: 394.80, low: 361.18, close: 378.11 },
+    { x: new Date('2020-10-19'), open: 378.12, high: 420.73, low: 365.27, close: 405.86 },
+    { x: new Date('2020-10-26'), open: 405.85, high: 411.11, low: 373.29, close: 396.67 },
+    { x: new Date('2020-11-02'), open: 396.68, high: 468.28, low: 370.23, close: 454.30 },
+    { x: new Date('2020-11-09'), open: 454.29, high: 478.01, low: 433.09, close: 448.08 },
+    { x: new Date('2020-11-16'), open: 448.07, high: 580.88, low: 445.45, close: 560.03 },
+    { x: new Date('2020-11-23'), open: 560.03, high: 623.00, low: 481.00, close: 576.30 },
+    { x: new Date('2020-11-30'), open: 576.32, high: 635.70, low: 560.00, close: 601.54 },
+    { x: new Date('2020-12-07'), open: 601.59, high: 603.15, low: 530.43, close: 590.70 },
+    { x: new Date('2020-12-14'), open: 590.81, high: 676.25, low: 575.60, close: 638.18 },
+    { x: new Date('2020-12-21'), open: 638.10, high: 717.13, low: 551.28, close: 685.11 },
+    { x: new Date('2020-12-28'), open: 685.10, high: 1011.07, low: 681.04, close: 978.28 },
+    { x: new Date('2021-01-04'), open: 978.33, high: 1348.33, low: 890.00, close: 1254.25 },
+    { x: new Date('2021-01-11'), open: 1254.24, high: 1298.00, low: 915.00, close: 1232.45 },
+    { x: new Date('2021-01-18'), open: 1232.50, high: 1438.30, low: 1042.31, close: 1392.51 },
+    { x: new Date('2021-01-25'), open: 1392.19, high: 1475.00, low: 1207.00, close: 1312.55 },
+    { x: new Date('2021-02-01'), open: 1312.45, high: 1760.49, low: 1269.99, close: 1611.62 },
+    { x: new Date('2021-02-08'), open: 1611.46, high: 1871.72, low: 1563.89, close: 1800.42 },
+    { x: new Date('2021-02-15'), open: 1800.03, high: 2042.34, low: 1655.67, close: 1933.53 },
+    { x: new Date('2021-02-22'), open: 1933.54, high: 1936.29, low: 1293.18, close: 1419.18 },
+    { x: new Date('2021-03-01'), open: 1418.67, high: 1734.16, low: 1409.91, close: 1726.16 },
+    { x: new Date('2021-03-08'), open: 1726.46, high: 1944.30, low: 1664.96, close: 1848.10 },
+    { x: new Date('2021-03-15'), open: 1848.10, high: 1891.76, low: 1711.68, close: 1782.98 },
+    { x: new Date('2021-03-22'), open: 1783.23, high: 1807.51, low: 1536.92, close: 1687.01 },
+    { x: new Date('2021-03-29'), open: 1687.16, high: 2146.00, low: 1677.85, close: 2075.69 },
+    { x: new Date('2021-04-05'), open: 2075.70, high: 2200.00, low: 1930.01, close: 2151.36 },
+    { x: new Date('2021-04-12'), open: 2151.42, high: 2548.29, low: 1946.80, close: 2235.64 },
+    { x: new Date('2021-04-19'), open: 2235.65, high: 2644.47, low: 2055.00, close: 2320.49 },
+    { x: new Date('2021-04-26'), open: 2320.44, high: 2985.00, low: 2303.64, close: 2949.56 },
+    { x: new Date('2021-05-03'), open: 2949.33, high: 3983.65, low: 2949.32, close: 3923.95 },
+    { x: new Date('2021-05-10'), open: 3923.95, high: 4372.72, low: 3343.06, close: 3582.10 },
+    { x: new Date('2021-05-17'), open: 3581.81, high: 3587.06, low: 1728.74, close: 2096.39 },
+    { x: new Date('2021-05-24'), open: 2096.63, high: 2910.00, low: 2079.94, close: 2385.98 },
+    { x: new Date('2021-05-31'), open: 2385.82, high: 2891.95, low: 2271.44, close: 2711.92 },
+    { x: new Date('2021-06-07'), open: 2711.92, high: 2847.55, low: 2256.22, close: 2509.33 },
+    { x: new Date('2021-06-14'), open: 2509.33, high: 2640.00, low: 2040.68, close: 2243.47 },
+    { x: new Date('2021-06-21'), open: 2243.49, high: 2260.16, low: 1700.48, close: 1982.28 },
+    { x: new Date('2021-06-28'), open: 1982.27, high: 2389.93, low: 1960.52, close: 2322.69 },
+    { x: new Date('2021-07-05'), open: 2322.69, high: 2409.00, low: 2046.51, close: 2140.45 },
+    { x: new Date('2021-07-12'), open: 2140.54, high: 2167.83, low: 1844.45, close: 1891.64 },
+    { x: new Date('2021-07-19'), open: 1891.65, high: 2199.50, low: 1706.00, close: 2189.79 },
+    { x: new Date('2021-07-26'), open: 2189.82, high: 2697.61, low: 2150.50, close: 2555.69 },
+    { x: new Date('2021-08-02'), open: 2555.50, high: 3189.99, low: 2442.32, close: 3011.85 },
+    { x: new Date('2021-08-09'), open: 3011.84, high: 3330.98, low: 2893.23, close: 3307.09 },
+    { x: new Date('2021-08-16'), open: 3307.35, high: 3335.00, low: 2950.00, close: 3238.00 },
+    { x: new Date('2021-08-23'), open: 3238.00, high: 3377.89, low: 3053.30, close: 3223.47 },
+    { x: new Date('2021-08-30'), open: 3223.47, high: 4027.88, low: 3143.00, close: 3950.29 },
+    { x: new Date('2021-09-06'), open: 3950.28, high: 3970.00, low: 3005.00, close: 3404.21 },
+    { x: new Date('2021-09-13'), open: 3404.30, high: 3676.28, low: 3108.49, close: 3328.62 },
+    { x: new Date('2021-09-20'), open: 3328.57, high: 3347.82, low: 2652.00, close: 3059.37 },
+    { x: new Date('2021-09-27'), open: 3059.36, high: 3488.00, low: 2782.00, close: 3417.73 },
+    { x: new Date('2021-10-04'), open: 3417.73, high: 3695.00, low: 3270.00, close: 3414.22 },
+    { x: new Date('2021-10-11'), open: 3414.22, high: 3971.00, low: 3371.00, close: 3846.85 },
+    { x: new Date('2021-10-18'), open: 3847.00, high: 4375.00, low: 3676.00, close: 4082.33 },
+    { x: new Date('2021-10-25'), open: 4082.33, high: 4460.47, low: 3890.17, close: 4287.21 },
+    { x: new Date('2021-11-01'), open: 4287.48, high: 4665.87, low: 4146.30, close: 4612.59 },
+    { x: new Date('2021-11-08'), open: 4612.59, high: 4868.00, low: 4461.93, close: 4626.50 },
+    { x: new Date('2021-11-15'), open: 4626.50, high: 4772.01, low: 3956.44, close: 4258.31 },
+    { x: new Date('2021-11-22'), open: 4259.70, high: 4551.00, low: 3913.00, close: 4294.78 },
+    { x: new Date('2021-11-29'), open: 4294.77, high: 4778.75, low: 3503.68, close: 4196.44 },
+    { x: new Date('2021-12-06'), open: 4196.44, high: 4488.00, low: 3828.22, close: 4130.00 },
+    { x: new Date('2021-12-13'), open: 4130.00, high: 4142.75, low: 3643.73, close: 3924.14 },
+    { x: new Date('2021-12-20'), open: 3924.14, high: 4150.00, low: 3753.00, close: 4063.56 },
+    { x: new Date('2021-12-27'), open: 4063.57, high: 4127.46, low: 3585.00, close: 3828.27 },
+    { x: new Date('2022-01-03'), open: 3828.11, high: 3900.73, low: 3000.00, close: 3151.97 },
+];
+
+export const EthereumPrimaryYAxis = {
+    title: 'Price',
+    minimum: 100,
+    maximum: 5000,
+    interval: 400,
+    lineStyle: { width: 0 },
+    majorTickLines: { width: 0 },
+};
