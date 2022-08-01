@@ -5,3 +5,4 @@ export { default as NavBar } from './NavBar';
 export { default as Sidebar } from './Sidebar';
 export { default as LineChart } from './charts/LineChart';
 export { default as PieChart } from './charts/PieChart';
+export { default as ChartsHeader } from './ChartsHeader';
