@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import { NavBar, Sidebar } from './components'
-import { Bnb, Btc, Eth, Calendar, Notes, Overview, Portfolio, TodoList, Trending, Watchlist } from './pages'
+import { Btc, Eth, Calendar, Notes, Portfolio, Crypto, TodoList, Trending, Watchlist } from './pages'
 
 import { useStateContext } from './contexts/ContextProvider'
 
@@ -35,16 +35,15 @@ const App = () => {
                     <div>
                         <Routes>
                             {/* Dashboard */}
-                            <Route path='/' element={<Overview />} />
-                            <Route path='/overview' element={<Overview />} />
-                            {/* Pages */}
+                            <Route path='/' element={<Portfolio />} />
                             <Route path='/portfolio' element={<Portfolio />} />
+                            {/* Pages */}
+                            <Route path='/crypto' element={<Crypto />} />
                             <Route path='/watchlist' element={<Watchlist />} />
                             <Route path='/trending' element={<Trending />} />
                             {/* Live Charts */}
                             <Route path='/btc-usd' element={<Btc />} />
                             <Route path='/eth-usd' element={<Eth />} />
-                            <Route path='/bnb-usd' element={<Bnb />} />
                             {/* Tools */}
                             <Route path='/calendar' element={<Calendar />} />
                             <Route path='/todo-list' element={<TodoList />} />
