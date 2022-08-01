@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Legend, Tooltip, LineSeries } from '@syncfusion/ej2-react-charts'
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Tooltip, LineSeries } from '@syncfusion/ej2-react-charts'
 
 import { lineCustomSeries, linePrimaryXAxis, linePrimaryYAxis } from '../../data/data'
 
@@ -10,12 +10,11 @@ const LineChart = () => {
         height="320px"
         primaryXAxis={linePrimaryXAxis}
         primaryYAxis={linePrimaryYAxis}
-        chartArea={{ border: { width: 0 } }}
+        chartArea={{ border: { width: 0 }, borderColor: 'white' }}
         tooltip={{ enable: true }}
-        background='#fff'
-        legendSettings={{ background: 'white'}}
+        background='#182b4b'
     >
-        <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
+        <Inject services={[LineSeries, DateTime, Tooltip]} />
         <SeriesCollectionDirective>
             {lineCustomSeries.map((item, index) => <SeriesDirective key={index} {...item} />)}
         </SeriesCollectionDirective>

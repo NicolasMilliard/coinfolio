@@ -10,7 +10,7 @@ import { useStateContext } from '../contexts/ContextProvider'
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position='BottomCenter'>
-    <button type='button' onClick={customFunc} style={{ color }} className='relative text-xl rounded-full p-3 hover:bg-light-gray'>
+    <button type='button' onClick={customFunc} style={{ color }} className='relative text-xl rounded-full p-3'>
       <span style={{ background: dotColor }} className='absolute inline-flex rounded-full h-2 w-2 right-2 top-2'></span>
       {icon}      
     </button>
@@ -42,25 +42,22 @@ const NavBar = () => {
       <NavButton
         title='Menu'
         customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
-        color='blue'
-        icon={<FiMenu />}
+        color='white'
+        icon={<FiMenu className='hover:text-[#fb9678]'/>}
       />
       <div className='flex'>
         <NavButton
           title='Notifications'
           customFunc={() => handleClick('notification')}
-          color='blue'
-          dotColor='red'
-          icon={<RiNotification2Line />}
+          color='white'
+          dotColor='#fb9678'
+          icon={<RiNotification2Line className='hover:text-[#fb9678]'/>}
         />
         <TooltipComponent content='Profile' position='BottomCenter'>
-          <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg' onClick={() => handleClick('userProfile')}>
+          <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-[#fb9678] rounded-lg' onClick={() => handleClick('userProfile')}>
             <img src={avatar} className='rounded-full w-8 h-8' />
-            <p>
-              <span className='text-slate-900 text-14'>Hi, </span> {' '}
-              <span className='text-slate-900 font-bold ml-1 text-14'>John</span>
-            </p>
-            <RiArrowDownSLine className='text-slate-900 text-14' />
+            <p className='text-white font-bold ml-1 text-14'>Franck Castle</p>
+            <RiArrowDownSLine className='text-white text-14' />
           </div>
         </TooltipComponent>
         {/* Display component notification and user profile if icons are clicked */}

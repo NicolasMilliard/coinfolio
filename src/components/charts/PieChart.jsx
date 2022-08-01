@@ -1,5 +1,5 @@
 import React from 'react'
-import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, AccumulationLegend, PieSeries, AccumulationDataLabel, Inject } from '@syncfusion/ej2-react-charts'
+import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip, Inject } from '@syncfusion/ej2-react-charts'
 
 import { pieChartData } from '../../data/data'
 
@@ -7,27 +7,26 @@ const PieChart = () => {
   return (
     <AccumulationChartComponent
     id='pie-chart'
-    legendSettings={{ visible: true, background: 'white' }}
+    legendSettings={{ visible: false }}
     height='320px'
-    background='#fff'
-    tooltip={{ enable: true}}
+    background='#182b4b'
+    tooltip={{ enable: true }}
     >
-      <Inject services={[AccumulationLegend, PieSeries, AccumulationDataLabel]} />
+      <Inject services={[AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip]} />
       <AccumulationSeriesCollectionDirective>
         <AccumulationSeriesDirective
           name="Assets"
           dataSource={pieChartData}
           xName="x"
           yName="y"
-          innerRadius="40%"
           startAngle={0}
           endAngle={360}
-          radius="90%"
+          radius="80%"
           explodeIndex={0}
           dataLabel={{
             visible: true,
             name: 'text',
-            position: 'Inside',
+            position: 'Outside',
             font: {
               fontWeight: '600',
               color: '#fff'
