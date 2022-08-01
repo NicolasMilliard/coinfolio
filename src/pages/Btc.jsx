@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, CandleSeries, Tooltip, DateTime, Zoom, Logarithmic, Crosshair } from '@syncfusion/ej2-react-charts'
 
-import { bitcoinChartData, FinancialPrimaryXAxis, FinancialPrimaryYAxis } from '../data/data'
+import { bitcoinChartData, FinancialPrimaryXAxis, BitcoinPrimaryYAxis } from '../data/data'
 import { useStateContext } from '../contexts/ContextProvider'
 import { ChartsHeader } from '../components/'
 
@@ -25,7 +25,7 @@ const Btc = () => {
         <ChartComponent
           id="bitcoin-chart"
           primaryXAxis={FinancialPrimaryXAxis}
-          primaryYAxis={FinancialPrimaryYAxis}
+          primaryYAxis={BitcoinPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
           tooltip={{ enable: true, shared: true }}
           crosshair={{ enable: true, lineType: 'Vertical', line: { width: 0 } }}
