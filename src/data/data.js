@@ -139,7 +139,7 @@ export const cryptoData = [
         DayVolume: '$6,904,107,764', MCap: '$54,280,683,993', ProductImage: 'https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389',
     },
     {
-        Rank: 5, Coin: 'BNB', CurrentPrice: '$294.68', Hour: '1.1%', HourBg: '#15c46d', Day: '-0.1%', DayBg: '#15c46d', Week: '13.2%', WeekBg: '#15c46d',
+        Rank: 5, Coin: 'BNB', CurrentPrice: '$294.68', Hour: '1.1%', HourBg: '#15c46d', Day: '-0.1%', DayBg: '#dd1547', Week: '15.0%', WeekBg: '#15c46d',
         DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850',
     },
     {
@@ -241,6 +241,156 @@ export const cryptoData = [
     {
         Rank: 30, Coin: 'Monero XMR', CurrentPrice: '$158.63', Hour: '-1.1%', HourBg: '#dd1547', Day: '-0.2%', DayBg: '#dd1547', Week: '-2.3%', WeekBg: '#dd1547',
         DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/69/thumb/monero_logo.png?1547033729',
+    },
+  ];
+
+  export const favoritesCryptoData = [
+    {
+        Rank: 1, Coin: 'Bitcoin BTC', CurrentPrice: '$23377.12', Hour: '-0.7%', HourBg: '#dd1547', Day: '-1.6%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
+        DayVolume: '$41,829,211,589', MCap: '$441,293,035,772', ProductImage: 'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579',
+    },
+    {
+        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1,660.06', Hour: '-0.8%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '-1.6%', WeekBg: '#dd1547',
+        DayVolume: '$14,254,201,962', MCap: '$198,110,897,073', ProductImage: 'https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880',
+    },
+    {
+        Rank: 5, Coin: 'BNB', CurrentPrice: '$294.68', Hour: '1.1%', HourBg: '#15c46d', Day: '-0.1%', DayBg: '#dd1547', Week: '15.0%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850',
+    },
+    {
+        Rank: 8, Coin: 'Caradano ADA', CurrentPrice: '$0.510244', Hour: '-0.6%', HourBg: '#dd1547', Day: '-1.5%', DayBg: '#dd1547', Week: '-3.8%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860',
+    },
+    {
+        Rank: 9, Coin: 'Solana SOL', CurrentPrice: '$40.29', Hour: '-1.5%', HourBg: '#dd1547', Day: '-3.5%', DayBg: '#dd1547', Week: '7.3%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422',
+    },
+    {
+        Rank: 10, Coin: 'Polkadot DOT', CurrentPrice: '$8.23', Hour: '-0.5%', HourBg: '#dd1547', Day: '-0.8%', DayBg: '#dd1547', Week: '0.1%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644',
+    },
+    {
+        Rank: 15, Coin: 'Avalanche AVAX', CurrentPrice: '$24.01', Hour: '-1.0%', HourBg: '#dd1547', Day: '-2.2%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/12559/thumb/coin-round-red.png?1604021818',
+    },
+    {
+        Rank: 16, Coin: 'Polygon MATIC', CurrentPrice: '$0.911993', Hour: '-0.6%', HourBg: '#dd1547', Day: '-1.7%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912',
+    },
+    {
+        Rank: 17, Coin: 'TRON TRX', CurrentPrice: '$0.069135', Hour: '-0.1%', HourBg: '#dd1547', Day: '-0.4%', DayBg: '#dd1547', Week: '-0.5%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/1094/thumb/tron-logo.png?1547035066',
+    },
+    {
+        Rank: 22, Coin: 'Litecoin LTC', CurrentPrice: '$59.26', Hour: '-1.7%', HourBg: '#dd1547', Day: '0.5%', DayBg: '#15c46d', Week: '0.6%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/2/thumb/litecoin.png?1547033580',
+    },
+    {
+        Rank: 23, Coin: 'Uniswap UNI', CurrentPrice: '$9.10', Hour: '-2.9%', HourBg: '#dd1547', Day: '-3.9%', DayBg: '#dd1547', Week: '8.9%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png?1600306604',
+    },
+    {
+        Rank: 26, Coin: 'Chainlink LINK', CurrentPrice: '$7.53', Hour: '-1.3%', HourBg: '#dd1547', Day: '-2.3%', DayBg: '#dd1547', Week: '7.0%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png?1547034700',
+    },
+    {
+        Rank: 27, Coin: 'NEAR Protocol NEAR', CurrentPrice: '$4.44', Hour: '-0.5%', HourBg: '#dd1547', Day: '-0.3%', DayBg: '#dd1547', Week: '6.8%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/10365/thumb/near_icon.png?1601359077',
+    },
+    {
+        Rank: 28, Coin: 'Cosmos Hub ATOM', CurrentPrice: '$10.38', Hour: '-0.4%', HourBg: '#dd1547', Day: '0.9%', DayBg: '#15c46d', Week: '0.9%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/1481/thumb/cosmos_hub.png?1555657960',
+    },
+    {
+        Rank: 29, Coin: 'Stellar XLM', CurrentPrice: '$0.117140', Hour: '-0.3%', HourBg: '#dd1547', Day: '-1.4%', DayBg: '#dd1547', Week: '1.6%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png?1552356157',
+    },
+    {
+        Rank: 30, Coin: 'Monero XMR', CurrentPrice: '$158.63', Hour: '-1.1%', HourBg: '#dd1547', Day: '-0.2%', DayBg: '#dd1547', Week: '-2.3%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/69/thumb/monero_logo.png?1547033729',
+    },
+  ];
+
+  export const trendingCryptoData = [
+    {
+        Rank: 31, Coin: 'Flow FLOW', CurrentPrice: '$2.76', Hour: '-3.0%', HourBg: '#dd1547', Day: '48.2%', DayBg: '#15c46d', Week: '46.5%', WeekBg: '#15c46d',
+        DayVolume: '$1,297,384,560', MCap: '$2,849,764,043', ProductImage: 'https://assets.coingecko.com/coins/images/13446/thumb/5f6294c0c7a8cda55cb1c936_Flow_Wordmark.png?1631696776',
+    },
+    {
+        Rank: 36, Coin: 'Filecoin FIL', CurrentPrice: '$8.37', Hour: '1.0%', HourBg: '#15c46d', Day: '1.4%', DayBg: '#15c46d', Week: '41.1%', WeekBg: '#15c46d',
+        DayVolume: '$375,197,737', MCap: '$2,129,287,774', ProductImage: 'https://assets.coingecko.com/coins/images/12817/thumb/filecoin.png?1602753933',
+    },
+    {
+        Rank: 71, Coin: 'Chiliz CHZ', CurrentPrice: '$0.146973', Hour: '0.2%', HourBg: '#15c46d', Day: '0.3%', DayBg: '#15c46d', Week: '21.4%', WeekBg: '#15c46d',
+        DayVolume: '$201,496,913', MCap: '$782,844,621', ProductImage: 'https://assets.coingecko.com/coins/images/8834/thumb/Chiliz.png?1561970540',
+    },
+    {
+        Rank: 45, Coin: 'Lido DAO LDO', CurrentPrice: '$2.71', Hour: '3.5%', HourBg: '#15c46d', Day: '9.4%', DayBg: '#15c46d', Week: '21.1%', WeekBg: '#15c46d',
+        DayVolume: '$158,848,969', MCap: '$1,449,614,824', ProductImage: 'https://assets.coingecko.com/coins/images/13573/thumb/Lido_DAO.png?1609873644',
+    },
+    {
+        Rank: 35, Coin: 'VeChain VET', CurrentPrice: '$0.03133127', Hour: '0.6%', HourBg: '#15c46d', Day: '5.3%', DayBg: '#15c46d', Week: '19.1%', WeekBg: '#15c46d',
+        DayVolume: '$157,316,510', MCap: '$2,266,229,234', ProductImage: 'https://assets.coingecko.com/coins/images/1167/thumb/VeChain-Logo-768x725.png?1547035194',
+    },
+    {
+        Rank: 84, Coin: 'PancakeSwap CAKE', CurrentPrice: '$4.22', Hour: '0.1%', HourBg: '#15c46d', Day: '4.9%', DayBg: '#15c46d', Week: '17.7%', WeekBg: '#15c46d',
+        DayVolume: '$114,887,941', MCap: '$618,413,598', ProductImage: 'https://assets.coingecko.com/coins/images/12632/thumb/pancakeswap-cake-logo_%281%29.png?1629359065',
+    },
+    {
+        Rank: 68, Coin: 'BitDAO BIT', CurrentPrice: '$0.782091', Hour: '1.3%', HourBg: '#15c46d', Day: '4.2%', DayBg: '#15c46d', Week: '16.7', WeekBg: '#15c46d',
+        DayVolume: '$82,798,515', MCap: '$865,861,460', ProductImage: 'https://assets.coingecko.com/coins/images/17627/thumb/rI_YptK8.png?1653983088',
+    },
+    {
+        Rank: 44, Coin: 'Theta Network THETA', CurrentPrice: '$1.55', Hour: '2.5%', HourBg: '#15c46d', Day: '9.6%', DayBg: '#15c46d', Week: '16.1%', WeekBg: '#15c46d',
+        DayVolume: '$98,360,847', MCap: '$1,572,267,291', ProductImage: 'https://assets.coingecko.com/coins/images/2538/thumb/theta-token-logo.png?1548387191',
+    },
+    {
+        Rank: 25, Coin: 'NEAR Protocol NEAR', CurrentPrice: '$5.20', Hour: '2.3%', HourBg: '#15c46d', Day: '16.6%', DayBg: '#15c46d', Week: '15.4%', WeekBg: '#15c46d',
+        DayVolume: '$417,364,375', MCap: '$3,761,220,447', ProductImage: 'https://assets.coingecko.com/coins/images/10365/thumb/near_icon.png?1601359077',
+    },
+    {
+        Rank: 5, Coin: 'BNB', CurrentPrice: '$294.68', Hour: '1.1%', HourBg: '#15c46d', Day: '-0.1%', DayBg: '#dd1547', Week: '15.0%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850',
+    },
+    {
+        Rank: 95, Coin: 'Kava KAVA', CurrentPrice: '$2.22', Hour: '-0.7%', HourBg: '#dd1547', Day: '4.2%', DayBg: '#15c46d', Week: '14.5%', WeekBg: '#15c46d',
+        DayVolume: '$48,539,996', MCap: '$539,587,869', ProductImage: 'https://assets.coingecko.com/coins/images/9761/thumb/kava.jpg?1639703080',
+    },
+    {
+        Rank: 37, Coin: 'Internet Computer ICP', CurrentPrice: '$8.10', Hour: '0.9%', HourBg: '#15c46d', Day: '0.3%', DayBg: '#15c46d', Week: '14.4%', WeekBg: '#15c46d',
+        DayVolume: '$71,589,114', MCap: '$2,067,498,082', ProductImage: 'https://assets.coingecko.com/coins/images/14495/thumb/Internet_Computer_logo.png?1620703073',
+    },
+    {
+        Rank: 80, Coin: 'Enjin Coin ENJ', CurrentPrice: '$0.701003', Hour: '-0.3%', HourBg: '#dd1547', Day: '5.5%', DayBg: '#15c46d', Week: '14.2%', WeekBg: '#15c46d',
+        DayVolume: '$249,614,060', MCap: '$654,858,730', ProductImage: 'https://assets.coingecko.com/coins/images/1102/thumb/enjin-coin-logo.png?1547035078',
+    },
+    {
+        Rank: 78, Coin: 'Stacks STX', CurrentPrice: '$0.495382', Hour: '0.7%', HourBg: '#15c46d', Day: '4.2%', DayBg: '#15c46d', Week: '13.7%', WeekBg: '#15c46d',
+        DayVolume: '$22,212,464', MCap: '$658,438,521', ProductImage: 'https://assets.coingecko.com/coins/images/2069/thumb/Stacks_logo_full.png?1604112510',
+    },
+    {
+        Rank: 57, Coin: 'Fantom FTM', CurrentPrice: '$0.381380', Hour: '-0.8%', HourBg: '#dd1547', Day: '7.8%', DayBg: '#15c46d', Week: '12.5%', WeekBg: '#15c46d',
+        DayVolume: '$464,754,591', MCap: '$969,864,397', ProductImage: 'https://assets.coingecko.com/coins/images/4001/thumb/Fantom.png?1558015016',
+    },
+    {
+        Rank: 94, Coin: 'Celcius Network CEL', CurrentPrice: '$1.30', Hour: '-0.8%', HourBg: '#dd1547', Day: '7.8%', DayBg: '#15c46d', Week: '12.5%', WeekBg: '#15c46d',
+        DayVolume: '$464,754,591', MCap: '$969,864,397', ProductImage: 'https://assets.coingecko.com/coins/images/3263/thumb/CEL_logo.png?1609598753',
+    },
+    {
+        Rank: 98, Coin: 'Celo CELO', CurrentPrice: '$1.09', Hour: '0.2%', HourBg: '#15c46d', Day: '6.3%', DayBg: '#15c46d', Week: '11.0%', WeekBg: '#15c46d',
+        DayVolume: '$21,020,278', MCap: '$495,681,168', ProductImage: 'https://assets.coingecko.com/coins/images/11090/thumb/icon-celo-CELO-color-500.png?1592293590',
+    },
+    {
+        Rank: 34, Coin: 'ApeCoin APE', CurrentPrice: '$7.63', Hour: '1.1%', HourBg: '#15c46d', Day: '0.7%', DayBg: '#15c46d', Week: '10.6%', WeekBg: '#15c46d',
+        DayVolume: '$464,694,080', MCap: '$2,349,708,307', ProductImage: 'https://assets.coingecko.com/coins/images/24383/thumb/apecoin.jpg?1647476455',
+    },
+    {
+        Rank: 59, Coin: 'The Graph GRT', CurrentPrice: '$0.126897', Hour: '1.4%', HourBg: '#15c46d', Day: '4.1%', DayBg: '#15c46d', Week: '10.4%', WeekBg: '#15c46d',
+        DayVolume: '$61,966,846', MCap: '$940,533,836', ProductImage: 'https://assets.coingecko.com/coins/images/13397/thumb/Graph_Token.png?1608145566',
+    },
+    {
+        Rank: 82, Coin: 'Waves WAVES', CurrentPrice: '$6.33', Hour: '-0.9%', HourBg: '#dd1547', Day: '10.3%', DayBg: '#15c46d', Week: '10.3%', WeekBg: '#15c46d',
+        DayVolume: '$860,352,945', MCap: '$635,376,330', ProductImage: 'https://assets.coingecko.com/coins/images/425/thumb/waves.png?1548386117',
     },
   ];
 
