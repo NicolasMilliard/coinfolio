@@ -33,7 +33,7 @@
 }
 
 /* Syncfusion GridComponent */
-#gridcomp, .e-gridheader .e-lib .e-droppable, .e-grid .e-gridheader, .e-grid .e-table, .e-grid .e-headercell, .e-grid .e-detailheadercell, .e-pager, .e-pager .e-pagercontainer {
+.e-gridheader .e-lib .e-droppable, .e-grid .e-gridheader, .e-grid .e-table, .e-grid .e-headercell, .e-grid .e-detailheadercell, .e-pager, .e-pager .e-pagercontainer {
   background-color: #182b4b;
   border-color: #fff;
   color: #fff;
