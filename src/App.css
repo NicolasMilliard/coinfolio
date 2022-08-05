@@ -56,3 +56,66 @@
   color: #fff;
   background-color: #fb9678 !important;
 }
+
+/* Syncfusion Calendar */
+.e-schedule, .e-schedule .e-vertical-view .e-left-indent-wrap table tbody td, .e-schedule .e-vertical-view .e-date-header-wrap table tbody td, .e-schedule .e-vertical-view .e-time-cells-wrap table td, .e-schedule .e-vertical-view .e-work-cells, .e-toolbar .e-tbar-btn, .e-schedule .e-month-view .e-date-header-wrap table td, .e-schedule .e-month-agenda-view .e-date-header-wrap table td, .e-schedule .e-month-view .e-work-cells, .e-schedule .e-month-agenda-view .e-work-cells, .e-schedule .e-vertical-view .e-date-header-wrap .e-all-day-cells, .e-schedule .e-vertical-view .e-date-header-wrap .e-all-day-cells:hover {
+  background-color: #182b4b;
+}
+
+.e-schedule .e-month-view .e-other-month, .e-schedule .e-month-agenda-view .e-other-month, .e-schedule .e-month-view .e-other-month:hover {
+  background-color: #1f2a3b;
+  color: rgb(170, 170, 170);
+}
+
+.e-schedule .e-vertical-view .e-work-cells:hover, .e-schedule .e-agenda-view, .e-calendar, .e-bigger.e-small .e-calendar, .e-calendar .e-footer-container, .e-bigger.e-small .e-calendar .e-footer-container, .e-schedule .e-month-view .e-work-cells:hover {
+  background-color: #182b4b;
+}
+
+.e-schedule .e-schedule-toolbar, .e-schedule .e-schedule-toolbar .e-toolbar-items {
+  background: #182b4b;
+}
+
+.e-schedule .e-vertical-view .e-date-header-wrap table tbody td, .e-schedule .e-vertical-view .e-time-cells-wrap table td, .e-toolbar .e-tbar-btn.e-btn .e-icons, .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text, .e-schedule .e-agenda-view .e-empty-event, .e-calendar .e-header .e-title, .e-bigger.e-small .e-calendar .e-header .e-title, .e-calendar th, .e-bigger.e-small .e-calendar th, .e-calendar .e-content span.e-day, .e-bigger.e-small .e-calendar .e-content span.e-day, .e-calendar .e-date-icon-prev, .e-calendar .e-date-icon-next, .e-bigger.e-small .e-calendar .e-date-icon-prev, .e-bigger.e-small .e-calendar .e-date-icon-next, .e-schedule .e-month-view .e-date-header-wrap table td, .e-schedule .e-month-agenda-view .e-date-header-wrap table td, .e-schedule .e-month-view .e-work-cells, .e-schedule .e-month-agenda-view .e-work-cells, .e-schedule .e-agenda-view .e-day-date-header, .e-schedule .e-agenda-view .e-subject, .e-schedule .e-agenda-view .e-location, .e-schedule .e-agenda-view .e-date-time, .e-schedule .e-vertical-view .e-row-count-wrapper .e-more-indicator, .e-schedule .e-vertical-view .e-all-day-appointment-section, .e-schedule .e-month-view .e-work-cells:hover, .e-schedule .e-month-view .e-more-indicator {
+  color: #fff;
+}
+
+.e-schedule .e-schedule-toolbar .e-active-view .e-tbar-btn-text, .e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary, .e-calendar .e-content td.e-today span.e-day, .e-schedule .e-vertical-view .e-header-cells.e-current-day, .e-schedule .e-vertical-view .e-clone-time-indicator, .e-schedule .e-vertical-view .e-current-time, .e-schedule .e-month-view .e-date-header-wrap table td.e-current-day, .e-schedule .e-month-agenda-view .e-date-header-wrap table td.e-current-day, .e-schedule .e-agenda-view .e-day-date-header.e-current-day {
+  color: #fb9678;
+}
+
+.e-schedule .e-vertical-view .e-day-wrapper .e-appointment, .e-quick-popup-wrapper .e-event-popup .e-popup-header, .e-calendar .e-content td.e-selected.e-focused-date span.e-day {
+  background-color: #fb9678;
+  color: #111e35;
+}
+
+.e-schedule .e-vertical-view .e-day-wrapper .e-appointment, .e-schedule .e-month-view .e-appointment {
+  border-color: #111e35;
+}
+
+.e-calendar .e-content td.e-selected.e-focused-date span.e-day, .e-calendar .e-content td.e-today span.e-day {
+  border-color: #fb9678;
+}
+
+.e-schedule .e-vertical-view .e-current-timeline {
+  border-top-color: #fb9678;
+}
+
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before, .e-input-group:not(.e-float-icon-left):not(.e-float-input)::after, .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after, .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before, .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after, .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before, .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after, .e-float-input:not(.e-input-group) .e-float-line::before, .e-float-input:not(.e-input-group) .e-float-line::after, .e-float-input:not(.e-input-group) .e-float-line::before, .e-float-input:not(.e-input-group) .e-float-line::after, .e-float-input.e-control-wrapper:not(.e-input-group) .e-float-line::before, .e-float-input.e-control-wrapper:not(.e-input-group) .e-float-line::after, .e-float-input.e-control-wrapper:not(.e-input-group) .e-float-line::before, .e-float-input.e-control-wrapper:not(.e-input-group) .e-float-line::after, .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before, .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after, .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before, .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after, .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before, .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after, .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before, .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after, .e-schedule .e-month-view .e-appointment, .e-schedule .e-agenda-view .e-appointment:hover, .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment, .e-bigger .e-more-popup-wrapper .e-appointment, .e-more-popup-wrapper .e-appointment {
+  background: #fb9678;
+}
+
+.e-input-group, .e-input-group.e-control-wrapper, .e-float-input, .e-float-input.e-input-group, .e-float-input.e-control-wrapper, .e-float-input.e-input-group.e-control-wrapper, .e-schedule .e-month-view .e-appointment, .e-schedule .e-agenda-view .e-appointment:hover > div, .e-schedule .e-agenda-view .e-appointment:hover > div > div, .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment {
+  color: #111e35;
+}
+
+.e-checkbox-wrapper .e-checkbox:focus+.e-frame.e-check, .e-css.e-checkbox-wrapper .e-checkbox:focus+.e-frame.e-check, .e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check {
+  background-color: #fb9678;
+}
+
+.e-schedule .e-agenda-view .e-appointment {
+  border-left-color: #fb9678;
+}
+
+.e-schedule .e-month-view .e-current-date .e-date-header, .e-schedule .e-month-agenda-view .e-current-date .e-date-header {
+  background-color: #111e35;
+}
