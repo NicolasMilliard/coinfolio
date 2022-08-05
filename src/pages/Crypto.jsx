@@ -10,10 +10,11 @@ const Crypto = () => {
     <div className='m-2 md:m-10 p-2 md:p-10 rounded-3xl bg-[#182b4b]'>
       <Header category='Page' title='All assets' />
       <GridComponent
-        id="gridcomp"
+        id='gridcomp'
         dataSource={cryptoData}
         allowPaging
         allowSorting
+        style={{ backgroundColor: '#111e35'}}
       >
         <ColumnsDirective>
           {cryptoGrid.map((item, index) => (
