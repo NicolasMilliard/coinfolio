@@ -39,7 +39,15 @@ const Sidebar = () => {
                         <div key={item.title}>
                             <p className='text-gray-400 m-3 mt-4 uppercase text-sm tracking-widest'>{item.title}</p>
                             {item.links.map((link) => (
-                                <NavLink to={`/${link.link}`} key={link.name} onClick={handleCloseSideBar} className={({ isActive }) => isActive ? activeLink : normalLink}>
+                                <NavLink
+                                    to={`/${link.link}`}
+                                    key={link.name}
+                                    onClick={handleCloseSideBar}
+                                    style={({ isActive }) => ({
+                                        backgroundColor: isActive ? '#fb9678' : ''
+                                    })}
+                                    className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                                >
                                     {link.icon} <span className='capitalize'>{link.name}</span>
                                 </NavLink>
                         ))}
