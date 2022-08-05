@@ -123,24 +123,124 @@ export const pieChartData = [
 
 export const cryptoData = [
     {
-        Rank: 1, Coin: 'Bitcoin BTC', CurrentPrice: '$23,093.00', Hour: '-0.3%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '2.2%', WeekBg: '#15c46d',
+        Rank: 1, Coin: 'Bitcoin BTC', CurrentPrice: '$23377.12', Hour: '-0.7%', HourBg: '#dd1547', Day: '-1.6%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
         DayVolume: '$41,829,211,589', MCap: '$441,293,035,772', ProductImage: 'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579',
     },
     {
-        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1,659.67', Hour: '-0.2%', HourBg: '#dd1547', Day: '-1.6%', DayBg: '#dd1547', Week: '3.5%', WeekBg: '#15c46d',
+        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1,660.06', Hour: '-0.8%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '-1.6%', WeekBg: '#dd1547',
         DayVolume: '$14,254,201,962', MCap: '$198,110,897,073', ProductImage: 'https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880',
     },
     {
-        Rank: 3, Coin: 'Tether USDT', CurrentPrice: '$0.988088', Hour: '-0.4%', HourBg: '#dd1547', Day: '0.1%', DayBg: '#15c46d', Week: '-0.3%', WeekBg: '#dd1547',
+        Rank: 3, Coin: 'Tether USDT', CurrentPrice: '$1.00', Hour: '-0.2%', HourBg: '#dd1547', Day: '0.2%', DayBg: '#15c46d', Week: '0.1%', WeekBg: '#15c46d',
         DayVolume: '$52,922,847,490', MCap: '$65,836,756,623', ProductImage: 'https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707',
     },
     {
-        Rank: 4, Coin: 'USD Coin USDC', CurrentPrice: '$0.987939', Hour: '-0.5%', HourBg: '#dd1547', Day: '-0.3%', DayBg: '#dd1547', Week: '-0.3%', WeekBg: '#dd1547',
+        Rank: 4, Coin: 'USD Coin USDC', CurrentPrice: '$1.00', Hour: '-0.1%', HourBg: '#dd1547', Day: '0.2%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
         DayVolume: '$6,904,107,764', MCap: '$54,280,683,993', ProductImage: 'https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389',
     },
     {
-        Rank: 5, Coin: 'BNB', CurrentPrice: '$284.03', Hour: '-0.2%', HourBg: '#dd1547', Day: '-1.8%', DayBg: '#dd1547', Week: '8.5%', WeekBg: '#15c46d',
+        Rank: 5, Coin: 'BNB', CurrentPrice: '$294.68', Hour: '1.1%', HourBg: '#15c46d', Day: '-0.1%', DayBg: '#15c46d', Week: '13.2%', WeekBg: '#15c46d',
         DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850',
+    },
+    {
+        Rank: 6, Coin: 'XRP', CurrentPrice: '$0.373838', Hour: '0.0%', HourBg: '#15c46d', Day: '-0.5%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png?1605778731',
+    },
+    {
+        Rank: 7, Coin: 'Binance USD BUSD', CurrentPrice: '$0.999745', Hour: '0.2%', HourBg: '#15c46d', Day: '-0.8%', DayBg: '#dd1547', Week: '-1.5%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png?1568947766',
+    },
+    {
+        Rank: 8, Coin: 'Caradano ADA', CurrentPrice: '$0.510244', Hour: '-0.6%', HourBg: '#dd1547', Day: '-1.5%', DayBg: '#dd1547', Week: '-3.8%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860',
+    },
+    {
+        Rank: 9, Coin: 'Solana SOL', CurrentPrice: '$40.29', Hour: '-1.5%', HourBg: '#dd1547', Day: '-3.5%', DayBg: '#dd1547', Week: '7.3%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422',
+    },
+    {
+        Rank: 10, Coin: 'Polkadot DOT', CurrentPrice: '$8.23', Hour: '-0.5%', HourBg: '#dd1547', Day: '-0.8%', DayBg: '#dd1547', Week: '0.1%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644',
+    },
+    {
+        Rank: 11, Coin: 'Dogecoin DOGE', CurrentPrice: '$0.068019', Hour: '0.2%', HourBg: '#15c46d', Day: '-1.1%', DayBg: '#dd1547', Week: '3.5%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256',
+    },
+    {
+        Rank: 12, Coin: 'Shiba SHIB', CurrentPrice: '$0.00001205', Hour: '-0.6%', HourBg: '#dd1547', Day: '-0.7%', DayBg: '#dd1547', Week: '0.1%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/11939/thumb/shiba.png?1622619446',
+    },
+    {
+        Rank: 13, Coin: 'Lido Stacked Ether STETH', CurrentPrice: '$1621.73', Hour: '0.1%', HourBg: '#15c46d', Day: '0.2%', DayBg: '#15c46d', Week: '-2.1%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/13442/thumb/steth_logo.png?1608607546',
+    },
+    {
+        Rank: 14, Coin: 'DAI', CurrentPrice: '$1.00', Hour: '-0.9%', HourBg: '#dd1547', Day: '-2.7%', DayBg: '#dd1547', Week: '-0.5%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734',
+    },
+    {
+        Rank: 15, Coin: 'Avalanche AVAX', CurrentPrice: '$24.01', Hour: '-1.0%', HourBg: '#dd1547', Day: '-2.2%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/12559/thumb/coin-round-red.png?1604021818',
+    },
+    {
+        Rank: 16, Coin: 'Polygon MATIC', CurrentPrice: '$0.911993', Hour: '-0.6%', HourBg: '#dd1547', Day: '-1.7%', DayBg: '#dd1547', Week: '-0.1%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912',
+    },
+    {
+        Rank: 17, Coin: 'TRON TRX', CurrentPrice: '$0.069135', Hour: '-0.1%', HourBg: '#dd1547', Day: '-0.4%', DayBg: '#dd1547', Week: '-0.5%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/1094/thumb/tron-logo.png?1547035066',
+    },
+    {
+        Rank: 18, Coin: 'Wrapped Bitcoin WBTC', CurrentPrice: '$23338.42', Hour: '-0.7%', HourBg: '#dd1547', Day: '-0.1%', DayBg: '#dd1547', Week: '-0.3%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/7598/thumb/wrapped_bitcoin_wbtc.png?1548822744',
+    },
+    {
+        Rank: 19, Coin: 'Ethereum Classic ETC', CurrentPrice: '$37.49', Hour: '-1.3%', HourBg: '#dd1547', Day: '-1.5%', DayBg: '#dd1547', Week: '8.4%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/453/thumb/ethereum-classic-logo.png?1547034169',
+    },
+    {
+        Rank: 20, Coin: 'OKB', CurrentPrice: '$18.34', Hour: '-0.3%', HourBg: '#dd1547', Day: '-0.1%', DayBg: '#dd1547', Week: '-3.6%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/4463/thumb/WeChat_Image_20220118095654.png?1642471050',
+    },
+    {
+        Rank: 21, Coin: 'Leo Token LEO', CurrentPrice: '$5.01', Hour: '-0.9%', HourBg: '#dd1547', Day: '-1.5%', DayBg: '#dd1547', Week: '12.8%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/8418/thumb/leo-token.png?1558326215',
+    },
+    {
+        Rank: 22, Coin: 'Litecoin LTC', CurrentPrice: '$59.26', Hour: '-1.7%', HourBg: '#dd1547', Day: '0.5%', DayBg: '#15c46d', Week: '0.6%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/2/thumb/litecoin.png?1547033580',
+    },
+    {
+        Rank: 23, Coin: 'Uniswap UNI', CurrentPrice: '$9.10', Hour: '-2.9%', HourBg: '#dd1547', Day: '-3.9%', DayBg: '#dd1547', Week: '8.9%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png?1600306604',
+    },
+    {
+        Rank: 24, Coin: 'FTX FTT', CurrentPrice: '$29.70', Hour: '0.7%', HourBg: '#15c46d', Day: '-1.1%', DayBg: '#dd1547', Week: '-0.4%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/9026/thumb/F.png?1609051564',
+    },
+    {
+        Rank: 25, Coin: 'Cronos CRO', CurrentPrice: '$0.150491', Hour: '0.6%', HourBg: '#15c46d', Day: '-4.0%', DayBg: '#dd1547', Week: '9.8%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/7310/thumb/oCw2s3GI_400x400.jpeg?1645172042',
+    },
+    {
+        Rank: 26, Coin: 'Chainlink LINK', CurrentPrice: '$7.53', Hour: '-1.3%', HourBg: '#dd1547', Day: '-2.3%', DayBg: '#dd1547', Week: '7.0%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png?1547034700',
+    },
+    {
+        Rank: 27, Coin: 'NEAR Protocol NEAR', CurrentPrice: '$4.44', Hour: '-0.5%', HourBg: '#dd1547', Day: '-0.3%', DayBg: '#dd1547', Week: '6.8%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/10365/thumb/near_icon.png?1601359077',
+    },
+    {
+        Rank: 28, Coin: 'Cosmos Hub ATOM', CurrentPrice: '$10.38', Hour: '-0.4%', HourBg: '#dd1547', Day: '0.9%', DayBg: '#15c46d', Week: '0.9%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/1481/thumb/cosmos_hub.png?1555657960',
+    },
+    {
+        Rank: 29, Coin: 'Stellar XLM', CurrentPrice: '$0.117140', Hour: '-0.3%', HourBg: '#dd1547', Day: '-1.4%', DayBg: '#dd1547', Week: '1.6%', WeekBg: '#15c46d',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png?1552356157',
+    },
+    {
+        Rank: 30, Coin: 'Monero XMR', CurrentPrice: '$158.63', Hour: '-1.1%', HourBg: '#dd1547', Day: '-0.2%', DayBg: '#dd1547', Week: '-2.3%', WeekBg: '#dd1547',
+        DayVolume: '$1,267,393,205', MCap: '$46,430,091,843', ProductImage: 'https://assets.coingecko.com/coins/images/69/thumb/monero_logo.png?1547033729',
     },
   ];
 
@@ -185,14 +285,14 @@ export const cryptoData = [
     {
         field: 'Rank',
         headerText: '#',
-        width: '50',
+        width: '80',
         textAlign: 'Center',
     },
     {
         field: 'Coin',
         template: coinCryptoImage,
         headerText: 'Coin',
-        width: '180',
+        width: '220',
         textAlign: 'Left',
     },
     {
@@ -476,6 +576,36 @@ export const ethereumChartData = [
     { x: new Date('2021-12-20'), open: 3924.14, high: 4150.00, low: 3753.00, close: 4063.56 },
     { x: new Date('2021-12-27'), open: 4063.57, high: 4127.46, low: 3585.00, close: 3828.27 },
     { x: new Date('2022-01-03'), open: 3828.11, high: 3900.73, low: 3000.00, close: 3151.97 },
+    { x: new Date('2022-01-10'), open: 3151.97, high: 3411.43, low: 2928.83, close: 3346.88 },
+    { x: new Date('2022-01-10'), open: 3151.97, high: 3411.43, low: 2928.83, close: 3346.88 },
+    { x: new Date('2022-01-17'), open: 3346.89, high: 3357.57, low: 2300.00, close: 2539.01 },
+    { x: new Date('2022-01-24'), open: 2539.00, high: 2722.00, low: 2159.00, close: 2601.68 },
+    { x: new Date('2022-01-31'), open: 2601.67, high: 3074.56, low: 2476.07, close: 3054.99 },
+    { x: new Date('2022-02-07'), open: 3055.00, high: 3283.66, low: 2836.70, close: 2871.13 },
+    { x: new Date('2022-02-14'), open: 2871.14, high: 3196.19, low: 2576.00, close: 2621.99 },
+    { x: new Date('2022-02-21'), open: 2621.99, high: 2878.00, low: 2300.00, close: 2616.79 },
+    { x: new Date('2022-02-28'), open: 2616.79, high: 3043.91, low: 2535.00, close: 2551.29 },
+    { x: new Date('2022-03-07'), open: 2551.30, high: 2775.85, low: 2445.00, close: 2515.65 },
+    { x: new Date('2022-03-14'), open: 2515.66, high: 2987.70, low: 2498.67, close: 2861.38 },
+    { x: new Date('2022-03-21'), open: 2861.39, high: 3299.37, low: 2829.81, close: 3295.65 },
+    { x: new Date('2022-03-28'), open: 3295.65, high: 3580.34, low: 3210.68, close: 3521.91 },
+    { x: new Date('2022-04-04'), open: 3521.90, high: 3555.00, low: 3143.15, close: 3203.04 },
+    { x: new Date('2022-04-11'), open: 3203.04, high: 3213.63, low: 2950.00, close: 2988.06 },
+    { x: new Date('2022-04-18'), open: 2988.07, high: 3180.00, low: 2883.22, close: 2921.00 },
+    { x: new Date('2022-04-25'), open: 2920.99, high: 3039.54, low: 2709.26, close: 2824.81 },
+    { x: new Date('2022-05-02'), open: 2824.81, high: 2965.85, low: 2484.00, close: 2519.71 },
+    { x: new Date('2022-05-09'), open: 2519.71, high: 2530.78, low: 1800.00, close: 2145.29 },
+    { x: new Date('2022-05-16'), open: 2145.29, high: 2145.29, low: 1903.18, close: 2043.19 },
+    { x: new Date('2022-05-23'), open: 2043.19, high: 2088.50, low: 1703.00, close: 1813.64 },
+    { x: new Date('2022-05-30'), open: 1813.64, high: 2016.45, low: 1737.00, close: 1806.23 },
+    { x: new Date('2022-06-06'), open: 1806.22, high: 1920.00, low: 1423.00, close: 1434.84 },
+    { x: new Date('2022-06-13'), open: 1434.84, high: 1455.00, low: 881.56, close: 1128.53 },
+    { x: new Date('2022-06-20'), open: 1128.53, high: 1280.00, low: 1043.65, close: 1197.79 },
+    { x: new Date('2022-06-27'), open: 1197.79, high: 1238.93, low: 998.00, close: 1074.26 },
+    { x: new Date('2022-07-04'), open: 1074.26, high: 1276.46, low: 1045.37, close: 1168.36 },
+    { x: new Date('2022-07-11'), open: 1168.37, high: 1422.91, low: 1006.32, close: 1338.65 },
+    { x: new Date('2022-07-18'), open: 1338.65, high: 1664.34, low: 1336.07, close: 1597.70 },
+    { x: new Date('2022-07-25'), open: 1597.70, high: 1784.79, low: 1356.17, close: 1678.12 },
 ];
 
 export const EthereumPrimaryYAxis = {
