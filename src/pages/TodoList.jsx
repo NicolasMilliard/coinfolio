@@ -1,7 +1,7 @@
 import React from 'react'
 import { KanbanComponent, ColumnsDirective, ColumnDirective, Kanban } from '@syncfusion/ej2-react-kanban'
 
-import { kanbanData, todoGrid } from '../data/data'
+import { todoData, todoGrid } from '../data/data'
 import { Header } from '../components'
 
 function columnTemplate(props) {
@@ -16,7 +16,7 @@ const TodoList = () => {
       <Header category='Tools' title='Todo List' />
       <KanbanComponent
         id='kanban'
-        dataSource={kanbanData}
+        dataSource={todoData}
         cardSettings={{ contentField: 'Summary', headerField: 'Id'}}
         keyField='Status'
         swimlaneSettings={{keyField: 'Assignee'}}
