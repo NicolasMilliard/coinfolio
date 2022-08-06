@@ -127,3 +127,20 @@
 .e-toolbar-right {
   display: none !important;
 }
+
+/* Syncfusion Kanban */
+.e-kanban {
+  background: #182b4b;
+}
+
+.e-kanban .e-kanban-table .e-header-cells, .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td {
+  background-color: #27406b;
+}
+
+.e-card {
+  background-color: #fb9678;
+}
+
+.e-kanban, .e-kanban .e-kanban-table .e-header-cells .e-column-expand, .e-kanban .e-kanban-table .e-header-cells .e-column-collapse, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count {
+  color: #fff;
+}
