@@ -373,7 +373,7 @@ export const cryptoData = [
         DayVolume: '$464,754,591', MCap: '$969,864,397', ProductImage: 'https://assets.coingecko.com/coins/images/4001/thumb/Fantom.png?1558015016',
     },
     {
-        Rank: 94, Coin: 'Celcius Location CEL', CurrentPrice: '$1.30', Hour: '-0.8%', HourBg: '#dd1547', Day: '7.8%', DayBg: '#15c46d', Week: '12.5%', WeekBg: '#15c46d',
+        Rank: 94, Coin: 'Celcius Network CEL', CurrentPrice: '$1.30', Hour: '-0.8%', HourBg: '#dd1547', Day: '7.8%', DayBg: '#15c46d', Week: '12.5%', WeekBg: '#15c46d',
         DayVolume: '$464,754,591', MCap: '$969,864,397', ProductImage: 'https://assets.coingecko.com/coins/images/3263/thumb/CEL_logo.png?1609598753',
     },
     {
