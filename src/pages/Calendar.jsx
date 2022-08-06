@@ -1,8 +1,20 @@
 import React from 'react'
-import { ScheduleComponent, Month, Agenda, Inject, ViewsDirective, ViewDirective } from '@syncfusion/ej2-react-schedule'
+import { ScheduleComponent, Agenda, Inject, ResourcesDirective, ResourceDirective } from '@syncfusion/ej2-react-schedule'
 
 import { scheduleData } from '../data/data'
 import { Header } from '../components'
+
+function eventTemplate(props) {
+  return(
+    <div className='template-wrap' style={{ background: props.CategoryColor}}>
+      <div className='Subject text-xl font-semibold text-slate-900 px-3 pt-3'>{props.Subject}</div>
+      <div className='Network flex flex-wrap items-center text-slate-900 pl-3 pb-3'>
+        <img src={props.NetworkImg} />
+        <span className='pl-2'>{props.Network}</span>
+      </div>
+    </div>
+  )
+}
 
 const Calendar = () => {
   return (
@@ -10,14 +22,14 @@ const Calendar = () => {
       <Header category='Tool' title='ICO Calendar' />
       <ScheduleComponent
         height='650px'
-        eventSettings={{ dataSource: scheduleData }}     
-        selectedDate={new Date(2022, 7, 1)}
-        currentView='Month'
+        eventSettings={{ dataSource: scheduleData, template: (props) => eventTemplate(props) }}     
+        selectedDate={new Date(2022, 7, 3)}
+        currentView='Agenda'
       >
-        <ViewsDirective>
-          <ViewDirective option='Month' showWeekend={false} />
-        </ViewsDirective>
-        <Inject services={[Month, Agenda]} />
+        <ResourcesDirective>
+          <ResourceDirective colorField='CategoryColor' />
+        </ResourcesDirective>
+        <Inject services={[Agenda]} />
       </ScheduleComponent>
     </div>
   )
