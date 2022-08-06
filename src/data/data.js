@@ -1076,3 +1076,27 @@ export const scheduleData = [
         <p>What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third  party.    Transactions  that  are  computationally  impractical  to   reverse   would  protect  sellers from fraud, and routine escrow mechanisms could easily be implemented to protect buyers.   In this paper, we propose a solution to the double-spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions.  The system   is   secure   as   long   as   honest   nodes   collectively   control   more   CPU   power   than   any cooperating group of attacker nodes.</p>
     </div>
   );
+
+  export const userProfileData = [
+    {
+      icon: <BiCoin />,
+      title: 'My Profile',
+      desc: 'Account Settings',
+      iconColor: '#03C9D7',
+      iconBg: '#E5FAFB',
+    },
+    {
+      icon: <BiCoin />,
+      title: 'My Inbox',
+      desc: 'Messages & Emails',
+      iconColor: 'rgb(0, 194, 146)',
+      iconBg: 'rgb(235, 250, 242)',
+    },
+    {
+      icon: <BiCoin />,
+      title: 'My Tasks',
+      desc: 'To-do and Daily Tasks',
+      iconColor: 'rgb(230, 194, 104)',
+      iconBg: 'rgb(254, 201, 15)',
+    },
+  ];
