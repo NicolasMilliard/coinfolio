@@ -776,7 +776,7 @@ export const scheduleData = [
       StartTime: '2022-08-05T00:00:00.000Z',
       EndTime: '2022-08-05T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#540e9f',
+      CategoryColor: '#96349f',
     },
     {
       Id: 2,
@@ -836,7 +836,7 @@ export const scheduleData = [
       StartTime: '2022-08-14T00:00:00.000Z',
       EndTime: '2022-08-14T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#00bdae',
+      CategoryColor: '#78e5cf',
     },
     {
       Id: 8,
@@ -846,7 +846,7 @@ export const scheduleData = [
       StartTime: '2022-08-14T00:00:00.000Z',
       EndTime: '2022-08-14T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#00bdae',
+      CategoryColor: '#fb9678',
     },
     {
       Id: 9,
@@ -856,7 +856,7 @@ export const scheduleData = [
       StartTime: '2022-08-14T00:00:00.000Z',
       EndTime: '2022-08-14T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#00bdae',
+      CategoryColor: '#d01015',
     },
     {
       Id: 10,
@@ -866,7 +866,7 @@ export const scheduleData = [
       StartTime: '2022-08-15T00:00:00.000Z',
       EndTime: '2022-08-15T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#00bdae',
+      CategoryColor: '#f7c13d',
     },
     {
       Id: 11,
@@ -876,7 +876,7 @@ export const scheduleData = [
       StartTime: '2022-10-15T00:00:00.000Z',
       EndTime: '2022-10-15T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#00bdae',
+      CategoryColor: '#da229b',
     },
     {
       Id: 12,
@@ -886,17 +886,17 @@ export const scheduleData = [
       StartTime: '2022-08-01T00:00:00.000Z',
       EndTime: '2022-08-01T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#f57f17',
+      CategoryColor: '#020a23',
     },
     {
       Id: 13,
-      Subject: 'Jindo  Inu',
+      Subject: 'Jindo Inu',
       Network: 'BSC',
       NetworkImg: 'https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850',
       StartTime: '2022-08-08T00:00:00.000Z',
       EndTime: '2022-08-08T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#1aaa55',
+      CategoryColor: '#fda456',
     },
     {
       Id: 14,
@@ -916,7 +916,7 @@ export const scheduleData = [
       StartTime: '2022-08-20T00:00:00.000Z',
       EndTime: '2022-08-20T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#7fa900',
+      CategoryColor: '#f8c54f',
     },
     {
       Id: 16,
@@ -926,7 +926,7 @@ export const scheduleData = [
       StartTime: '2022-08-24T00:00:00.000Z',
       EndTime: '2022-08-24T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#ea7a57',
+      CategoryColor: '#271867',
     },
     {
       Id: 17,
@@ -936,7 +936,7 @@ export const scheduleData = [
       StartTime: '2022-08-25T00:00:00.000Z',
       EndTime: '2022-08-25T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#00bdae',
+      CategoryColor: '#1a8dd0',
     },
     {
       Id: 18,
@@ -946,7 +946,7 @@ export const scheduleData = [
       StartTime: '2022-08-26T00:00:00.000Z',
       EndTime: '2022-08-26T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#f57f17',
+      CategoryColor: '#01456b',
     },
     {
       Id: 19,
@@ -956,7 +956,7 @@ export const scheduleData = [
       StartTime: '2022-08-30T00:00:00.000Z',
       EndTime: '2022-08-30T02:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#7fa900',
+      CategoryColor: '#c01ff3',
     },
     {
       Id: 20,
@@ -966,6 +966,123 @@ export const scheduleData = [
       StartTime: '2022-08-31T00:00:00.000Z',
       EndTime: '2022-08-31T00:00:00.000Z',
       IsAllDay: true,
-      CategoryColor: '#ea7a57',
+      CategoryColor: '#00a2ef',
+    },
+  ];
+
+  export const todoData = [
+    {
+      Id: 'SYL',
+      Status: 'Open',
+      Summary: 'Define a strategy to eventually participate to this ICO.',
+      Assignee: 'ICO',
+    },
+    {
+      Id: 'Lightning Network',
+      Status: 'InProgress',
+      Summary: 'Learn how Lightning Network is working',
+      Assignee: 'Bitcoin',
+    },
+    {
+      Id: 'Incomplete Guide to Rollups',
+      Status: 'Open',
+      Summary: 'Read an Incomplete Guide to Rollups from Vitalik.',
+      Assignee: 'Ethereum',
+    },
+    {
+      Id: 'Whitepaper',
+      Status: 'Close',
+      Summary: 'Read the Ethereum Whitepaper.',
+      Assignee: 'Ethereum',
+    },
+    {
+      Id: 'Binance Smart Chain',
+      Status: 'Close',
+      Summary: 'Read the Binance Smart Chain Whitepaper.',
+      Assignee: 'Binance',
+    },
+    {
+      Id: 'Bitcoin',
+      Status: 'Open',
+      Summary: 'Create a recurring purchase of Bitcoin on Binance.',
+      Assignee: 'Binance',
+    },
+    {
+      Id: 'Soul Bound Token',
+      Status: 'InProgress',
+      Summary: 'Learn how to create SBT.',
+      Assignee: 'Ethereum',
+    },
+    {
+      Id: 'Whitepaper',
+      Status: 'Close',
+      Summary: 'Read the Bitcoin Whitepaper.',
+      Assignee: 'Bitcoin',
+    },
+    {
+      Id: 'Binance NFT',
+      Status: 'Close',
+      Summary: 'Publish my NFT to the Binance marketplace.',
+      Assignee: 'Binance',
+    },
+    {
+      Id: 'Axie Infinity',
+      Status: 'Close',
+      Summary: 'Create my new team of Axies to prepare myself for Origin.',
+      Assignee: 'Play To Earn',
+    },
+    {
+      Id: 'Vitalik Buterin',
+      Status: 'Close',
+      Summary: 'Discover who he is (much easier than Satoshi Nakamoto).',
+      Assignee: 'Ethereum',
+    },
+    {
+      Id: 'Task 18',
+      Status: 'Validate',
+      Summary: 'Validate editing issues.',
+      Assignee: 'ICO',
+    },
+    {
+      Id: 'Task 19',
+      Status: 'Review',
+      Summary: 'Test editing functionality.',
+      Assignee: 'ICO',
+    },
+    {
+      Id: 'Satoshi Nakamoto',
+      Status: 'Open',
+      Summary: 'Discover who he is. Or not.',
+      Assignee: 'Bitcoin',
+    },
+    {
+      Id: 'Galeon',
+      Status: 'InProgress',
+      Summary: 'Participate to the ICO and stake the token.',
+      Assignee: 'ICO',
+    },
+    {
+      Id: 'STEPN',
+      Status: 'Open',
+      Summary: 'Participate to the Genesis sneaker event',
+      Assignee: 'Play To Earn',
+    },
+  ];
+  
+  export const todoGrid = [
+    {
+        headerText: 'To Do',
+        keyField: 'Open',
+        allowToggle: true
+    },  
+    {
+        headerText: 'In Progress',
+        keyField: 'InProgress',
+        allowToggle: true
+    },
+    {
+        headerText: 'Done',
+        keyField: 'Close',
+        allowToggle: true
     },
   ];
