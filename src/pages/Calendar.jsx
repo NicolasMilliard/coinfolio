@@ -1,16 +1,16 @@
 import React from 'react'
-import { ScheduleComponent, Agenda, Inject, ResourcesDirective, ResourceDirective } from '@syncfusion/ej2-react-schedule'
+import { ScheduleComponent, Month, Agenda, Inject } from '@syncfusion/ej2-react-schedule'
 
 import { scheduleData } from '../data/data'
 import { Header } from '../components'
 
 function eventTemplate(props) {
   return(
-    <div className='template-wrap' style={{ background: props.CategoryColor}}>
+    <div className='e-appointment-details flex flex-col'>
       <div className='Subject text-xl font-semibold text-slate-900 px-3 pt-3'>{props.Subject}</div>
-      <div className='Network flex flex-wrap items-center text-slate-900 pl-3 pb-3'>
-        <img src={props.NetworkImg} />
-        <span className='pl-2'>{props.Network}</span>
+      <div className='Location flex flex-wrap items-center text-slate-900 pl-3 pb-3'>
+        <img src={props.LocationImg} />
+        <span className='pl-2'>{props.Location}</span>
       </div>
     </div>
   )
@@ -24,12 +24,9 @@ const Calendar = () => {
         height='650px'
         eventSettings={{ dataSource: scheduleData, template: (props) => eventTemplate(props) }}     
         selectedDate={new Date(2022, 7, 3)}
-        currentView='Agenda'
+        currentView='Month'
       >
-        <ResourcesDirective>
-          <ResourceDirective colorField='CategoryColor' />
-        </ResourcesDirective>
-        <Inject services={[Agenda]} />
+        <Inject services={[Month, Agenda]} />
       </ScheduleComponent>
     </div>
   )
