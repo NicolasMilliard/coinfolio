@@ -144,3 +144,24 @@
 .e-kanban, .e-kanban .e-kanban-table .e-header-cells .e-column-expand, .e-kanban .e-kanban-table .e-header-cells .e-column-collapse, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count {
   color: #fff;
 }
+
+/* Syncfusion Notes */
+.e-toolbar, .e-toolbar .e-toolbar-items, .e-toolbar .e-hor-nav, .e-toolbar.e-extended-toolbar .e-toolbar-pop, .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn, .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item.e-overlay, .e-toolbar .e-toolbar-items .e-toolbar-item.e-overlay {
+  background: #182b4b;
+}
+
+.e-toolbar .e-tbar-btn, .e-toolbar .e-popup-down-icon.e-icons, .e-toolbar .e-popup-up-icon.e-icons, .e-richtexteditor .e-rte-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn .e-icons, .e-richtexteditor .e-rte-content .e-content, .e-richtexteditor .e-source-content .e-content {
+  color: #fff;
+}
+
+.e-richtexteditor .e-rte-toolbar .e-toolbar-extended .e-toolbar-item.e-overlay .e-tbar-btn .e-icons, .e-richtexteditor .e-rte-toolbar .e-toolbar-item.e-overlay .e-tbar-btn .e-icons {
+  color: #7c7c7c;
+}
+
+.e-toolbar .e-tbar-btn.e-btn .e-icons:hover, .e-toolbar .e-tbar-btn:hover {
+  color: #fb9678;
+}
+
+.e-richtexteditor .e-rte-content .e-content, .e-richtexteditor .e-source-content .e-content {
+  background: #27406b;
+}
