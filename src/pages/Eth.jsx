@@ -37,7 +37,7 @@ const Eth = () => {
               dataSource={returnValue}
               xName="x"
               yName="low"
-              name="Bitcoin"
+              name="Ethereum"
               type="Candle"
               enableSolidCandles="true"
               bullFillColor= "#f23645"
