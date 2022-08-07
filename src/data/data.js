@@ -5,6 +5,11 @@ import { RiTodoLine, RiMailLine } from 'react-icons/ri'
 import { BsTextLeft } from 'react-icons/bs'
 import { AiOutlineAlert } from 'react-icons/ai'
 
+import bitcoinLogo from './bitcoin-logo.png'
+import ethereumLogo from './ethereum-logo.png'
+import tronLogo from './tron-logo.png'
+import binanceLogo from './bnb-logo.png'
+
 export const links = [
     {
         title: 'Dashboard',
@@ -1094,7 +1099,30 @@ export const scheduleData = [
     {
       icon: <AiOutlineAlert />,
       title: 'My Alerts',
-      desc: 'Price alerts, ICO alerts...',
+      desc: 'Manage your alerts',
       iconColor: '#fb9678',
+    },
+  ];
+
+  export const notificationData = [
+    {
+      image: bitcoinLogo,
+      message: 'Bitcoin reached $24\'000!',
+      time: '9:08 AM',
+    },
+    {
+      image: ethereumLogo,
+      message: 'Ethereum reached $1\'700!',
+      time: '11:56 AM',
+    },
+    {
+      image: tronLogo,
+      message: 'GEMS ICO is coming!',
+      time: '4:39 AM',
+    },
+    {
+      image: binanceLogo,
+      message: 'Legendary PAW ICO is coming!',
+      time: '1:12 AM',
     },
   ];
