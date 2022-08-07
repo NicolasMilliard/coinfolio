@@ -3,8 +3,6 @@ import { LineChart, PieChart } from '../components'
 import { SiBitcoin, SiEthereum, SiBinance, SiDogecoin } from 'react-icons/si'
 import { BiTrendingUp, BiTrendingDown } from 'react-icons/bi'
 
-import { useStateContext } from '../contexts/ContextProvider'
-
 const Portfolio = () => {
   return (
     <>
@@ -13,7 +11,7 @@ const Portfolio = () => {
       </div>
       <div className='flex m-3 px-7 flex-wrap gap-8 items-center'>
         {/* Bitcoin */}
-        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7'>
+        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7 cursor-pointer hover:bg-[#27406b] hover:drop-shadow-xl'>
           <div className='flex items-center mb-4 justify-between'>
             <div className='flex items-center'>
               <SiBitcoin className='text-white' />
@@ -30,7 +28,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Ethereum */}
-        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7'>
+        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7 cursor-pointer hover:bg-[#27406b] hover:drop-shadow-xl'>
           <div className='flex items-center mb-4 justify-between'>
             <div className='flex items-center'>
               <SiEthereum className='text-white' />
@@ -47,7 +45,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Binance Coins */}
-        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7'>
+        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7 cursor-pointer hover:bg-[#27406b] hover:drop-shadow-xl'>
           <div className='flex items-center mb-4 justify-between'>
             <div className='flex items-center'>
               <SiBinance className='text-white' />
@@ -64,7 +62,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* Dogecoin */}
-        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7'>
+        <div className='bg-[#182b4b] h-43 rounded-xl w-80 p-7 cursor-pointer hover:bg-[#27406b] hover:drop-shadow-xl'>
           <div className='flex items-center mb-4 justify-between'>
             <div className='flex items-center'>
               <SiDogecoin className='text-white' />
