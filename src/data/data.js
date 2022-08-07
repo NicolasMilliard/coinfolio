@@ -1,8 +1,9 @@
 import React from 'react'
 import { SiBitcoin, SiEthereum } from 'react-icons/si'
-import { BiPieChart, BiCoin, BiListUl, BiTrendingUp, BiCalendar } from 'react-icons/bi'
-import { RiTodoLine } from 'react-icons/ri'
+import { BiPieChart, BiCoin, BiListUl, BiTrendingUp, BiCalendar, BiUser } from 'react-icons/bi'
+import { RiTodoLine, RiMailLine } from 'react-icons/ri'
 import { BsTextLeft } from 'react-icons/bs'
+import { AiOutlineAlert } from 'react-icons/ai'
 
 export const links = [
     {
@@ -1079,24 +1080,21 @@ export const scheduleData = [
 
   export const userProfileData = [
     {
-      icon: <BiCoin />,
+      icon: <BiUser />,
       title: 'My Profile',
       desc: 'Account Settings',
-      iconColor: '#03C9D7',
-      iconBg: '#E5FAFB',
+      iconColor: '#fb9678',
     },
     {
-      icon: <BiCoin />,
+      icon: <RiMailLine />,
       title: 'My Inbox',
-      desc: 'Messages & Emails',
-      iconColor: 'rgb(0, 194, 146)',
-      iconBg: 'rgb(235, 250, 242)',
+      desc: 'News and messages',
+      iconColor: '#fb9678',
     },
     {
-      icon: <BiCoin />,
-      title: 'My Tasks',
-      desc: 'To-do and Daily Tasks',
-      iconColor: 'rgb(230, 194, 104)',
-      iconBg: 'rgb(254, 201, 15)',
+      icon: <AiOutlineAlert />,
+      title: 'My Alerts',
+      desc: 'Price alerts, ICO alerts...',
+      iconColor: '#fb9678',
     },
   ];
