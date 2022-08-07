@@ -57,6 +57,10 @@
   background-color: #fb9678 !important;
 }
 
+.e-grid th.e-headercell[aria-sort=ascending] .e-headertext, .e-grid th.e-headercell[aria-sort=descending] .e-headertext, .e-grid th.e-headercell[aria-sort=ascending] .e-sortfilterdiv, .e-grid th.e-headercell[aria-sort=descending] .e-sortfilterdiv {
+  color: #fb9678;
+}
+
 /* Syncfusion Calendar */
 .e-schedule, .e-schedule .e-vertical-view .e-left-indent-wrap table tbody td, .e-schedule .e-vertical-view .e-date-header-wrap table tbody td, .e-schedule .e-vertical-view .e-time-cells-wrap table td, .e-schedule .e-vertical-view .e-work-cells, .e-toolbar .e-tbar-btn, .e-schedule .e-month-view .e-date-header-wrap table td, .e-schedule .e-month-agenda-view .e-date-header-wrap table td, .e-schedule .e-month-view .e-work-cells, .e-schedule .e-month-agenda-view .e-work-cells, .e-schedule .e-vertical-view .e-date-header-wrap .e-all-day-cells, .e-schedule .e-vertical-view .e-date-header-wrap .e-all-day-cells:hover {
   background-color: #182b4b;
@@ -104,20 +108,16 @@
   background: #fb9678;
 }
 
-.e-input-group, .e-input-group.e-control-wrapper, .e-float-input, .e-float-input.e-input-group, .e-float-input.e-control-wrapper, .e-float-input.e-input-group.e-control-wrapper, .e-schedule .e-month-view .e-appointment, .e-schedule .e-agenda-view .e-appointment:hover > div, .e-schedule .e-agenda-view .e-appointment:hover > div > div, .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment, .e-calendar .e-content span.e-day {
+.e-input-group, .e-input-group.e-control-wrapper, .e-float-input, .e-float-input.e-input-group, .e-float-input.e-control-wrapper, .e-float-input.e-input-group.e-control-wrapper, .e-schedule .e-month-view .e-appointment, .e-schedule .e-agenda-view .e-appointment:hover > div, .e-schedule .e-agenda-view .e-appointment:hover > div > div, .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment, .e-calendar .e-content span.e-day, .e-schedule .e-month-view .e-current-date .e-date-header, .e-schedule .e-month-agenda-view .e-current-date .e-date-header {
   color: #111e35;
 }
 
-.e-checkbox-wrapper .e-checkbox:focus+.e-frame.e-check, .e-css.e-checkbox-wrapper .e-checkbox:focus+.e-frame.e-check, .e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check, .e-calendar .e-content td.e-selected span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-selected span.e-day, .e-calendar .e-content td.e-selected span.e-day:hover {
+.e-checkbox-wrapper .e-checkbox:focus+.e-frame.e-check, .e-css.e-checkbox-wrapper .e-checkbox:focus+.e-frame.e-check, .e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check, .e-calendar .e-content td.e-selected span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-selected span.e-day, .e-calendar .e-content td.e-selected span.e-day:hover, .e-schedule .e-month-view .e-current-date .e-date-header, .e-schedule .e-month-agenda-view .e-current-date .e-date-header {
   background-color: #fb9678;
 }
 
 .e-schedule .e-agenda-view .e-appointment {
   border-left-color: #fb9678;
-}
-
-.e-schedule .e-month-view .e-current-date .e-date-header, .e-schedule .e-month-agenda-view .e-current-date .e-date-header {
-  background-color: #111e35;
 }
 
 .e-schedule .e-month-view .e-appointment {
@@ -128,12 +128,16 @@
   display: none !important;
 }
 
+.e-schedule .e-month-view .e-appointment {
+  cursor: pointer;
+}
+
 /* Syncfusion Kanban */
 .e-kanban {
   background: #182b4b;
 }
 
-.e-kanban .e-kanban-table .e-header-cells, .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td {
+.e-kanban .e-kanban-table .e-header-cells, .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td, .e-kanban .e-kanban-header .e-header-cells.e-collapsed {
   background-color: #27406b;
 }
 
@@ -141,7 +145,7 @@
   background-color: #fb9678;
 }
 
-.e-kanban, .e-kanban .e-kanban-table .e-header-cells .e-column-expand, .e-kanban .e-kanban-table .e-header-cells .e-column-collapse, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count {
+.e-kanban, .e-kanban .e-kanban-table .e-header-cells .e-column-expand, .e-kanban .e-kanban-table .e-header-cells .e-column-collapse, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text, .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count, .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-collapse-header-text {
   color: #fff;
 }
 
@@ -158,7 +162,7 @@
   color: #7c7c7c;
 }
 
-.e-toolbar .e-tbar-btn.e-btn .e-icons:hover, .e-toolbar .e-tbar-btn:hover {
+.e-toolbar .e-tbar-btn.e-btn .e-icons:hover, .e-toolbar .e-tbar-btn:hover, .e-richtexteditor .e-rte-toolbar .e-toolbar-item.e-active .e-tbar-btn .e-icons, .e-richtexteditor .e-rte-toolbar .e-toolbar-item.e-active .e-tbar-btn:focus .e-icons {
   color: #fb9678;
 }
 
