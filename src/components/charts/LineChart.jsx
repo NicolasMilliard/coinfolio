@@ -10,7 +10,7 @@ const LineChart = () => {
         height="320px"
         primaryXAxis={linePrimaryXAxis}
         primaryYAxis={linePrimaryYAxis}
-        chartArea={{ border: { width: 0 }, borderColor: 'white' }}
+        chartArea={{ border: { width: 0 } }}
         tooltip={{ enable: true }}
         background='#182b4b'
     >
