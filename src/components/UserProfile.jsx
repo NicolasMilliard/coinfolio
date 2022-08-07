@@ -19,7 +19,7 @@ const UserProfile = () => {
         <button
           type='button'
           onClick={handleCloseUserProfile}
-          className='text-2xl text-white p-3 hover:drop-shadow-xl hover:bg-[#111e35]'
+          className='text-2xl p-3 hover:drop-shadow-xl rounded-full hover:bg-[#fb9678] text-white hover:text-[#182b4b]'
         >
           <MdClose />
         </button>
@@ -45,7 +45,7 @@ const UserProfile = () => {
         ))}
       </div>
       <div className='mt-5'>
-        <button type='button' className='text-white bg-[#fb9678] rounded-xl p-3 w-full hover:drop-shadow-xl'>Logout</button>
+        <button type='button' className='text-white hover:text-[#182b4b] bg-[#fb9678] rounded-xl p-3 w-full hover:drop-shadow-xl'>Logout</button>
       </div>
     </div>
   )
