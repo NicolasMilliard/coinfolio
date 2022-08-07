@@ -133,7 +133,7 @@ export const cryptoData = [
         DayVolume: '$41,829,211,589', MCap: '$441,293,035,772', ProductImage: 'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579',
     },
     {
-        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1,660.06', Hour: '-0.8%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '-1.6%', WeekBg: '#dd1547',
+        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1660.06', Hour: '-0.8%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '-1.6%', WeekBg: '#dd1547',
         DayVolume: '$14,254,201,962', MCap: '$198,110,897,073', ProductImage: 'https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880',
     },
     {
@@ -256,7 +256,7 @@ export const cryptoData = [
         DayVolume: '$41,829,211,589', MCap: '$441,293,035,772', ProductImage: 'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579',
     },
     {
-        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1,660.06', Hour: '-0.8%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '-1.6%', WeekBg: '#dd1547',
+        Rank: 2, Coin: 'Ethereum ETH', CurrentPrice: '$1660.06', Hour: '-0.8%', HourBg: '#dd1547', Day: '-2.6%', DayBg: '#dd1547', Week: '-1.6%', WeekBg: '#dd1547',
         DayVolume: '$14,254,201,962', MCap: '$198,110,897,073', ProductImage: 'https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880',
     },
     {
